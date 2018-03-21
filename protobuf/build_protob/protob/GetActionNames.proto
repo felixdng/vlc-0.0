@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+message GetActionNamesResp {
+	repeated string name_array = 1;
+}

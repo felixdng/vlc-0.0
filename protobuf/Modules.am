@@ -1,0 +1,48 @@
+libprotobuf_plugin_la_SOURCES = \
+	src/msg_handler.c \
+	src/msg_handler.h \
+	src/protob.c \
+	src/protob.h \
+	src/protocol.c \
+	src/protocol.h \
+	src/util.c \
+	src/util.h \
+	protob/pb.h \
+	protob/pb_common.c \
+	protob/pb_common.h \
+	protob/pb_decode.c \
+	protob/pb_decode.h \
+	protob/pb_encode.c \
+	protob/pb_encode.h \
+	protob/Activation.pb.c \
+	protob/Activation.pb.h \
+	protob/AddAction.pb.c \
+	protob/AddAction.pb.h \
+	protob/Connect.pb.c \
+	protob/Connect.pb.h \
+	protob/DeleteAction.pb.c \
+	protob/DeleteAction.pb.h \
+	protob/Disconnect.pb.c \
+	protob/Disconnect.pb.h \
+	protob/Download.pb.c \
+	protob/Download.pb.h \
+	protob/GetActionNames.pb.c \
+	protob/GetActionNames.pb.h \
+	protob/GetOrders.pb.c \
+	protob/GetOrders.pb.h \
+	protob/ModifyAction.pb.c \
+	protob/ModifyAction.pb.h \
+	protob/SearchActionByName.pb.c \
+	protob/SearchActionByName.pb.h \
+	protob/SearchActionByOrder.pb.c \
+	protob/SearchActionByOrder.pb.h \
+	protob/SearchActionByPage.pb.c \
+	protob/SearchActionByPage.pb.h \
+	protob/Upload.pb.c \
+	protob/Upload.pb.h
+libprotobuf_plugin_la_CFLAGS = $(AM_CFLAGS) -I$(srcdir)/protob -I$(srcdir)/src
+libprotobuf_plugin_la_LIBADD = $(AM_LIBADD)
+libprotobuf_plugin_la_LDFLAGS = $(AM_LDFLAGS)
+
+protobuf_LTLIBRARIES += libprotobuf_plugin.la
+

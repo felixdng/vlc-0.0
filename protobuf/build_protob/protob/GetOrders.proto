@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+message GetOrdersResp {
+	repeated int64 order_array = 1;
+}

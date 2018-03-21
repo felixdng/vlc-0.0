@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+message ConnectReq {
+	required string serial_num = 1;
+}
+
+message ConnectResp {
+	required int64 state = 1;
+	required string serial_num = 2;
+	required int64 connect_state = 3;
+	required int64 version_code = 4;
+}

@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+message SearchActionByPageReq {
+	required int64 page_size = 1;
+	required int64 page_num = 2;
+}
+
+message SearchActionByPageResp {
+	repeated ObjAction action_array = 1;
+
+	message ObjAction {
+		required string action_id = 1;
+		required string action_name = 2;
+		required int64 execute_order = 3;
+		required int64 execute_time = 4;
+		required string arguments = 5;
+	}
+}

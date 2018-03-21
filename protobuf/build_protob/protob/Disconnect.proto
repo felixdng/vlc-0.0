@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+message DisconnectReq {
+	required string serial_num = 1;
+}

@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message ActivationReq {
+	required string activity_ai = 1;
+}
+
+message ActivationResp {
+	required int64 state = 1;
+}

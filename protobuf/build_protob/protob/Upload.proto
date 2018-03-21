@@ -1,0 +1,5 @@
+syntax = "proto2";
+
+message UploadResp {
+	required int64 state = 1;
+}

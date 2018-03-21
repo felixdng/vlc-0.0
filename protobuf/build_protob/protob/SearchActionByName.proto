@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+message SearchActionByNameReq {
+	required string name = 1;
+}
+
+message SearchActionByNameResp {
+	required string action_id = 1;
+	required string action_name = 2;
+	required int64 execute_order = 3;
+	required int64 execute_time = 4;
+	required string arguments = 5;
+}

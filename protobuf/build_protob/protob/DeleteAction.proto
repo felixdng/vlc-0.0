@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message DeleteActionReq {
+	required string action_id = 1;
+}
+
+message DeleteActionResp {
+	required int64 state = 1;
+}
